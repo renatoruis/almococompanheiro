@@ -117,12 +117,12 @@ body {
 
 /* Card 1: mesa vazia / refeição sozinho */
 .problem-card:not(.problem-card-2):not(.problem-card-3) {
-  background-image: url('https://plus.unsplash.com/premium_photo-1680086902907-00f970151632?w=1200');
+  background-image: url('https://plus.unsplash.com/premium_photo-1680086902907-00f970151632?w=800&fm=webp&q=80');
 }
 
 /* Card 2: idoso / solidão */
 .problem-card-2 {
-  background-image: url('https://images.unsplash.com/photo-1680257109069-c504b426b315?w=1200');
+  background-image: url('https://images.unsplash.com/photo-1680257109069-c504b426b315?w=800&fm=webp&q=80');
 }
 
 .problem-card-2::before {
@@ -137,7 +137,7 @@ body {
 
 /* Card 3: família / gerações */
 .problem-card-3 {
-  background-image: url('https://images.unsplash.com/photo-1584641071614-bb726ea0855e?w=1200');
+  background-image: url('https://images.unsplash.com/photo-1584641071614-bb726ea0855e?w=800&fm=webp&q=80');
 }
 
 .problem-card-3::before {

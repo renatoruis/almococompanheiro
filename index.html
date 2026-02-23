@@ -110,9 +110,11 @@
       }
     }
   </script>
-  <!-- Preconnect & Preload – performance -->
+  <!-- Preconnect & Preload – performance (antes de recursos bloqueantes) -->
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="assets/hero-1.webp" as="image">
   <link rel="preload" href="css/styles.css" as="style">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
@@ -133,7 +135,7 @@
   <header class="bg-white border-b border-dark/10 shadow-sm">
     <div class="max-w-6xl mx-auto px-4 py-3 sm:px-6 sm:py-4 flex justify-center">
       <a href="/" class="flex items-center" aria-label="Almoço Companheiro - página inicial">
-        <img src="assets/logo.png" alt="Almoço Companheiro" class="h-12 w-auto object-contain sm:h-14 md:h-16 lg:h-20">
+        <img src="assets/logo.png" alt="Almoço Companheiro" class="h-12 w-auto object-contain sm:h-14 md:h-16 lg:h-20" width="224" height="84" decoding="async">
       </a>
     </div>
   </header>
@@ -166,7 +168,7 @@
         <div class="flex justify-center lg:justify-end order-2">
           <div class="polaroid-hero w-full max-w-[280px] sm:max-w-xs md:max-w-sm lg:max-w-md mx-auto">
             <div class="polaroid-inner">
-              <img src="assets/hero-1.webp" alt="Dois homens a partilhar uma refeição: companhia à mesa" class="polaroid-img polaroid-img--contain">
+              <img src="assets/hero-1.webp" alt="Dois homens a partilhar uma refeição: companhia à mesa" class="polaroid-img polaroid-img--contain" width="560" height="420" fetchpriority="high" decoding="async">
             </div>
           </div>
         </div>

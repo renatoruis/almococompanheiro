@@ -31,11 +31,13 @@
         hideBanner();
       }
 
-      if (consent === 'accept' || consent === 'reject') {
-        hideBanner();
-      } else {
-        showBanner();
-      }
+      requestAnimationFrame(function () {
+        if (consent === 'accept' || consent === 'reject') {
+          hideBanner();
+        } else {
+          showBanner();
+        }
+      });
 
       if (acceptBtn) acceptBtn.addEventListener('click', () => setConsent('accept'));
       if (rejectBtn) rejectBtn.addEventListener('click', () => setConsent('reject'));
@@ -55,7 +57,9 @@
       }
 
       window.addEventListener('scroll', toggleBackToTop, { passive: true });
-      toggleBackToTop();
+      requestAnimationFrame(function () {
+        toggleBackToTop();
+      });
 
       backToTop.addEventListener('click', function (e) {
         e.preventDefault();
