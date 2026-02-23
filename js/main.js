@@ -6,13 +6,30 @@
 (function () {
   'use strict';
 
-  // Utilitários
   const init = function () {
-    // Inicialização futura: analytics, interações, etc.
-    console.log('Almoço Companheiro carregado');
+    // Back to top – mostrar/esconder conforme scroll
+    const backToTop = document.getElementById('back-to-top');
+    if (backToTop) {
+      const scrollThreshold = 300;
+
+      function toggleBackToTop() {
+        if (window.scrollY > scrollThreshold) {
+          backToTop.classList.remove('opacity-0', 'pointer-events-none');
+        } else {
+          backToTop.classList.add('opacity-0', 'pointer-events-none');
+        }
+      }
+
+      window.addEventListener('scroll', toggleBackToTop, { passive: true });
+      toggleBackToTop();
+
+      backToTop.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
   };
 
-  // Executar quando o DOM estiver pronto
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {

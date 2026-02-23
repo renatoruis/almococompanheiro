@@ -89,3 +89,63 @@ body {
     margin-top: 2.5rem;
   }
 }
+
+/* Cards com imagem e degradé */
+.problem-card {
+  position: relative;
+}
+
+.problem-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.97) 0%,
+    rgba(255, 255, 255, 0.85) 25%,
+    rgba(91, 179, 167, 0.5) 60%,
+    rgba(91, 179, 167, 0.2) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.problem-card-inner {
+  position: relative;
+  z-index: 2;
+}
+
+/* Card 1: mesa vazia / refeição sozinho */
+.problem-card:not(.problem-card-2):not(.problem-card-3) {
+  background-image: url('https://plus.unsplash.com/premium_photo-1680086902907-00f970151632?w=1200');
+}
+
+/* Card 2: idoso / solidão */
+.problem-card-2 {
+  background-image: url('https://images.unsplash.com/photo-1680257109069-c504b426b315?w=1200');
+}
+
+.problem-card-2::before {
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.97) 0%,
+    rgba(255, 255, 255, 0.88) 30%,
+    rgba(252, 138, 57, 0.4) 65%,
+    rgba(252, 138, 57, 0.15) 100%
+  );
+}
+
+/* Card 3: família / gerações */
+.problem-card-3 {
+  background-image: url('https://images.unsplash.com/photo-1584641071614-bb726ea0855e?w=1200');
+}
+
+.problem-card-3::before {
+  background: linear-gradient(
+    to top,
+    rgba(255, 255, 255, 0.97) 0%,
+    rgba(255, 255, 255, 0.86) 28%,
+    rgba(41, 41, 41, 0.4) 62%,
+    rgba(41, 41, 41, 0.12) 100%
+  );
+}
