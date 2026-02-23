@@ -1,0 +1,91 @@
+/**
+ * Almoço Companheiro - Estilos customizados
+ * Mobile-first, cores: #5bb3a7 (teal), #fc8a39 (laranja), #292929 (dark)
+ */
+
+/* Base */
+body {
+  font-family: 'Nunito', system-ui, sans-serif;
+}
+
+/* Backgrounds */
+.bg-cream {
+  background-color: #f8faf9;
+}
+
+.bg-hero-pattern {
+  background-color: #b5b5b5;
+  background-image: linear-gradient(
+    rgba(91, 179, 167, 0.88),
+    rgb(255, 255, 255)
+  );
+  background-repeat: repeat;
+  background-position: center;
+}
+
+/* Polaroid-style hero image (inclinado) */
+.polaroid-hero {
+  background: #fff;
+  padding: 8px 8px 36px 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07),
+    0 10px 25px rgba(0, 0, 0, 0.1),
+    0 0 1px rgba(0, 0, 0, 0.1);
+  transform: rotate(-3deg);
+  max-width: 100%;
+}
+
+@media (min-width: 640px) {
+  .polaroid-hero {
+    padding: 12px 12px 48px 12px;
+    transform: rotate(-4deg);
+  }
+}
+
+.polaroid-inner {
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: #f8f8f8;
+}
+
+.polaroid-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Ilustração no polaroide: object-fit contain para mostrar sem cortar */
+.polaroid-img--contain {
+  object-fit: contain;
+}
+
+/* Botão CTA com animação leve de "salto" */
+@keyframes cta-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.btn-cta-bounce {
+  animation: cta-float 2.5s ease-in-out infinite;
+}
+
+.btn-cta-bounce:hover {
+  animation-play-state: paused;
+}
+
+/* Respiro entre secções – espaçamento lateral e margem superior */
+.section-card {
+  margin-top: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .section-card {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-card {
+    margin-top: 2.5rem;
+  }
+}
