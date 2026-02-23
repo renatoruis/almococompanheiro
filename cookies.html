@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Cookies | Almoço Companheiro</title>
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://almococompanheiro.pt/cookies.html">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { teal: '#5bb3a7', laranja: '#fc8a39', dark: '#292929' }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-[#f8faf9] text-dark antialiased font-['Nunito',sans-serif]">
+  <header class="bg-white border-b border-dark/10 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 sm:px-6 sm:py-4 flex justify-center">
+      <a href="/" class="flex items-center" aria-label="Almoço Companheiro - página inicial">
+        <img src="assets/logo.png" alt="Almoço Companheiro" class="h-12 w-auto sm:h-14">
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+    <h1 class="text-2xl sm:text-3xl font-bold text-dark mb-8">Política de Cookies</h1>
+    <p class="text-dark/80 text-sm mb-8">Última atualização: fevereiro de 2026</p>
+
+    <div class="prose prose-dark max-w-none space-y-6 text-dark/90">
+      <section>
+        <h2 class="text-lg font-semibold text-dark mb-3">1. O que são cookies</h2>
+        <p>Cookies são pequenos ficheiros de texto armazenados no seu dispositivo quando visita um website. São amplamente utilizados para o funcionamento do site, melhorar a experiência do utilizador e analisar o tráfego.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-dark mb-3">2. Cookies que utilizamos</h2>
+        <p>O Almoço Companheiro utiliza os seguintes tipos de cookies:</p>
+        <ul class="list-disc pl-6 mt-2 space-y-2">
+          <li><strong>Cookies estritamente necessários</strong> – indispensáveis ao funcionamento do site (por exemplo, recordar a sua escolha sobre cookies). Estes não requerem consentimento prévio nos termos da Lei n.º 41/2004.</li>
+          <li><strong>Cookies de preferências</strong> – guardam escolhas como o idioma. Utilizamos um cookie local para recordar se aceitou ou rejeitou cookies não essenciais.</li>
+          <li><strong>Cookies de terceiros (opcionais)</strong> – se utilizarmos ferramentas de análise (ex.: Google Analytics) no futuro, serão ativados apenas com o seu consentimento.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-dark mb-3">3. Base legal</h2>
+        <p>Para cookies estritamente necessários, a base legal é o interesse legítimo. Para cookies analíticos e de marketing, solicitamos o seu consentimento prévio (opt-in), em conformidade com o RGPD e a Lei n.º 41/2004 (transposição da ePrivacy).</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-dark mb-3">4. Gestão e revogação</h2>
+        <p>Pode alterar as suas preferências de cookies a qualquer momento. Para fazer isso:</p>
+        <ul class="list-disc pl-6 mt-2 space-y-1">
+          <li>Visite a <a href="/" class="text-teal underline hover:no-underline">página inicial</a> – o aviso de cookies reaparecerá se limpar os cookies do site</li>
+          <li>Configure o seu navegador para bloquear ou eliminar cookies (consulte as definições de privacidade do Chrome, Firefox, Safari, Edge, etc.)</li>
+        </ul>
+        <p class="mt-3">Tenha em conta que a desativação de cookies necessários pode afetar o funcionamento do site.</p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-semibold text-dark mb-3">5. Mais informações</h2>
+        <p>Para mais detalhes sobre o tratamento dos seus dados pessoais, consulte a nossa <a href="privacidade.html" class="text-teal underline hover:no-underline">Política de Privacidade</a>.</p>
+      </section>
+    </div>
+
+    <div class="mt-12 pt-8 border-t border-dark/10">
+      <a href="/" class="inline-flex items-center gap-2 text-teal font-medium hover:underline">← Voltar à página inicial</a>
+    </div>
+  </main>
+
+  <!-- Aviso de cookies (partilhado) -->
+  <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-50 bg-dark/95 text-white px-4 py-4 sm:px-6 sm:py-5 shadow-lg transform translate-y-full transition-transform duration-300" role="dialog" aria-label="Aviso de cookies">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-start sm:items-center gap-4">
+      <p class="text-sm sm:text-base text-white/90 flex-1">
+        Utilizamos cookies para melhorar a sua experiência. <a href="cookies.html" class="text-teal underline">Cookies</a> · <a href="privacidade.html" class="text-teal underline">Privacidade</a>.
+      </p>
+      <div class="flex gap-3">
+        <button id="cookie-accept" class="px-4 py-2.5 rounded-xl bg-teal text-white font-semibold text-sm">Aceitar</button>
+        <button id="cookie-reject" class="px-4 py-2.5 rounded-xl bg-white/20 text-white font-medium text-sm">Recusar</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-8 px-4 mt-12 mx-4 sm:mx-6 lg:mx-8 mb-6 rounded-2xl">
+    <div class="max-w-3xl mx-auto text-center text-sm text-white/80">
+      <p><a href="/" class="hover:text-white">Almoço Companheiro</a> · <a href="privacidade.html" class="hover:text-white">Privacidade</a> · <a href="cookies.html" class="hover:text-white">Cookies</a></p>
+      <p class="mt-2 text-white/60">Coimbra · +351 934 317 545</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

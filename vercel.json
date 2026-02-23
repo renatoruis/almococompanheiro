@@ -1,6 +1,7 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/privacidade", "destination": "/privacidade.html" },
+    { "source": "/cookies", "destination": "/cookies.html" }
   ],
   "headers": [
     {
